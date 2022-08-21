@@ -32,7 +32,6 @@ json_data = r.json()
 
 k_info = json_data['dataset']
 afx_df = pd.DataFrame(k_info['data'], columns=k_info['column_names'])
-info = afx_df.info()
 desc = afx_df.describe()
 
 # Goals
@@ -48,13 +47,28 @@ These are your tasks for this mini project:
 7. (Optional) What was the median trading volume during this year. (Note: you may need to implement your own function for calculating the median.)
 """
 
-#
-#
-# twenty_17 = "https://data.nasdaq.com/api/v3/datasets/FSE/AFX_X.json?" \
-#             "Date=7-01-01&Date=2017-12-31&api_key=sahUUE2GjnUSHDYGayzp"
-# # Package the request, send the request and catch the response: r
-# r = requests.get(twenty_17)
-# textin = r.text
-#
-# # Decode the JSON data into a dictionary: json_data
-# json_data_2017 = r.json()
+afx_df.drop(axis=1, inplace=True, columns=['Last Price of the Day', 'Daily Traded Units', 'Daily Turnover'])
+
+info1 = afx_df.info()
+desc1 = afx_df.describe()
+
+#high Low
+high = afx_df.iloc[afx_df['Open'].idxmax()]['Open']
+low = afx_df.iloc[afx_df['Open'].idxmin()]["Open"]
+
+# will not drop this row because the needed information to calculate value was present
+change_locale = afx_df[afx_df['Change'].notnull()].index.tolist()
+fix_one_with_change_value = afx_df.at[change_locale[0], 'Open'] = afx_df.loc[169, 'Change'] + afx_df.loc[169, 'Close']
+
+# will drop the remaining two null rows because losing 2 values in a over 200 with change values less than 1 will not make a large difference
+open_locale = afx_df[afx_df['Open'].isnull()].index.tolist()
+afx_df.drop(open_locale, inplace=True)
+
+afx_df['Change'] = afx_df['Open'] - afx_df['Close']
+
+
+
+
+
+
+

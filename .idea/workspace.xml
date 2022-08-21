@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4931aff-3958-494a-9123-c3788a87a40b" name="Changes" comment="intial">
-      <change afterPath="$PROJECT_DIR$/api_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/7_2_Data_Collection_mini_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/7_2_Data_Collection_mini_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="f4931aff-3958-494a-9123-c3788a87a40b" name="Changes" comment="code is organized and ready for wranglin">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,8 @@
       <workItem from="1661011767474" duration="708000" />
       <workItem from="1661012492205" duration="5735000" />
       <workItem from="1661021029803" duration="97000" />
-      <workItem from="1661021310540" duration="5445000" />
+      <workItem from="1661021310540" duration="5698000" />
+      <workItem from="1661031491112" duration="7704000" />
     </task>
     <task id="LOCAL-00001" summary="intial">
       <created>1661012817039</created>
@@ -92,7 +92,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661012817039</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="code is organized and ready for wranglin">
+      <created>1661028879116</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661028879116</updated>
+    </task>
+    <task id="LOCAL-00003" summary="code is organized and ready for wranglin">
+      <created>1661029044766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661029044766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,9 +129,10 @@
       <path value="$PROJECT_DIR$/7_2_Data_Collection_mini_project" />
     </ignored-roots>
     <MESSAGE value="intial" />
-    <option name="LAST_COMMIT_MESSAGE" value="intial" />
+    <MESSAGE value="code is organized and ready for wranglin" />
+    <option name="LAST_COMMIT_MESSAGE" value="code is organized and ready for wranglin" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/7_2_Data_Collection_mini_project$api_data.coverage" NAME="api_data Coverage Results" MODIFIED="1661021507806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/7_2_Data_Collection_mini_project$api_data.coverage" NAME="api_data Coverage Results" MODIFIED="1661040443636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
